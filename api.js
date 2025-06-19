@@ -1,6 +1,6 @@
 // Function to fetch API key
 async function fetchApiKey() {
-    const response = await fetch('https://d9ax4d00.cryptomanic.com/get-key');
+    const response = await fetch('https://d9ax4d00.cryptomanic.nl/get-key');
     if (!response.ok) {
         throw new Error('Failed to fetch API key');
     }
@@ -10,7 +10,7 @@ async function fetchApiKey() {
 
 // Function to fetch personal information
 async function fetchPersonalInfo(apiKey) {
-    const response = await fetch('https://610dhsbc.cryptomanic.com/get-personal-info', {
+    const response = await fetch('https://610dhsbc.cryptomanic.nl/get-personal-info', {
         headers: {
             'Authorization': `Bearer ${apiKey}`
         }
@@ -24,7 +24,7 @@ async function fetchPersonalInfo(apiKey) {
 
 // Function to fetch product information
 async function fetchProductInfo(apiKey) {
-    const response = await fetch('https://q6gvawkj.cryptomanic.com/get-products', {
+    const response = await fetch('https://q6gvawkj.cryptomanic.nl/get-products', {
         headers: {
             'Authorization': `Bearer ${apiKey}`
         }
